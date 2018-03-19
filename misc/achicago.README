@@ -1,0 +1,25 @@
+
+			       ACHICAGO
+
+		  Chicago Manual A-style references
+				 and
+			author-date citations
+
+
+  To get a LaTeX package and a BibTeX bibstyle producing citations and
+  references in a style recommended by _The Chicago Manual of Style_,
+  please download the entire directory
+
+    tex-archive/macros/latex/contrib/supported/frankenstein
+
+  on CTAN and follow the installation instructions in the file INSTALL
+  in that directory.  Full documentation of the BibTeX bibliography
+  style is in the file achicago-bst.dvi in that directory; full
+  documentation of the accompanying LaTeX package is in the file
+  achicago.dvi in that directory.
+
+  Please see the file README in that directory for all further
+  information.
+
+
+  Author: Matt Swift <swift@alum.mit.edu>

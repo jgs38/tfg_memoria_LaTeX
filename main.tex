@@ -1,0 +1,155 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+
+%   Castellano
+\usepackage[spanish,english,activeacute]{babel}
+\decimalpoint
+\usepackage{boxedminipage}
+
+%   Matemáticas
+\usepackage{ucs}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage[margin=4cm]{geometry}
+\usepackage{resizegather} %Para ecuaciones muy largas
+
+%Import the natbib package and sets a bibliography  and citation styles
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+% \bibliographystyle{plain}
+\setcitestyle{authoryear}
+% \setcitestyle{authoryear,open={((},close={))}}
+\usepackage{enumerate}
+\usepackage{ftnxtra}
+
+%footnote pegado a la zona inferior de la pagina
+\usepackage[bottom]{footmisc}
+
+%   Figuras
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.bmp,.pdf,.png,.jpg,.gif,.jpeg}
+\usepackage[mathscr]{eucal}
+\usepackage[nottoc]{tocbibind}
+\usepackage[colorlinks,urlcolor=blue,citecolor=blue,linkcolor=blue,filecolor=blue]{hyperref}
+\usepackage{subfig}
+
+%   Tablas
+%\usepackage{colortbl}% color
+\usepackage{lscape}% vertical
+% \usepackage{multirow}
+
+% Tablas avanzadas
+\usepackage{fancyhdr}
+\markboth{izquierdo}{derecho}
+\usepackage{pgfplotstable,array,booktabs}
+
+%   Programación
+\usepackage{minted}
+
+\newmintedfile[mybash]{bash}{
+    linenos,
+    numbersep=4pt,
+    gobble=0,
+    frame=lines,
+    framesep=2mm,
+}
+
+\newmintedfile[mypython]{python}{
+    linenos,
+    numbersep=5pt,
+    gobble=0,
+    frame=lines,
+    framesep=2mm,
+}
+
+%Arbol directorios
+\usepackage{tikz}
+\usetikzlibrary{trees}
+
+\usepackage{xcolor}
+\tikzstyle{every node}=[thick,anchor=west, rounded corners, font={\scriptsize\ttfamily}, inner sep=2.5pt]
+\tikzstyle{selected}=[draw=blue,fill=blue!10]
+\tikzstyle{root}=[selected, fill=blue!30]
+
+% Cambiar formato de una sola pagina
+\usepackage{geometry}
+
+%   Para introducir páginas en blanco
+\usepackage{afterpage}
+
+\usepackage[toc,page]{appendix}
+
+%   formato del documento
+\include{formato_documento}
+
+%   Comandos definidos por el usuario
+\include{newcomand}
+
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definición}[section]
+
+\renewcommand{\appendixname}{Anexos}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+
+\begin{document}
+
+\include{00_Portada/portada}
+
+\newpage
+$\ $
+\thispagestyle{empty} % para que no se numere esta pagina
+
+\selectlanguage{spanish}
+
+\include{02_Agradecimientos/agradecimientos}
+
+\newpage
+$\ $
+\thispagestyle{empty}
+
+\include{01_Indice/Indice}
+
+
+\include{03_Abstract/abstract}
+
+\newpage
+$\ $
+\thispagestyle{empty}
+
+\selectlanguage{spanish}
+
+\include{1_Introduccion/introduccion}
+
+\include{2_Muestras/muestras}
+
+\include{3_Redshift_Hatlas/Redshift_Hatlas}
+
+\include{4_cross_identificacion/cross_identificacion}
+
+\include{5_HALOS/halos}
+
+\include{6_Resultados/resultados}
+
+\include{7_Conclusiones/conclusiones}
+
+\appendix
+
+\include{Apendices/a_tb64/apendice_a_tabla_comparativa}
+
+\include{Apendices/b_tbSIGMAGAMA/apendice_d_sigmagama.tex}
+
+\include{Apendices/codigo/apendice_codigo}
+
+%   Bibliografia
+\bibliography{references}
+
+\end{document}

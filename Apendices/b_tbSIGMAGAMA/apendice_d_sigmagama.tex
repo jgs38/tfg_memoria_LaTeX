@@ -1,0 +1,62 @@
+\section{Selección de objetos del catálogo GAMA }\label{apendice:tab:sigmas}
+
+\begin{table}[!ht]
+\centering
+\pgfplotstabletypeset[
+    col sep=comma,
+    columns={n,id,zg,zn,szn,source,quality},
+    brackets/.style={
+        postproc cell content/.append style={/pgfplots/table/@cell content/.add={\relax[}{]}},
+    },
+    parenthesis/.style={
+        postproc cell content/.append style={/pgfplots/table/@cell content/.add={\relax(}{)}},
+    },
+    display columns/0/.style={
+        column name={N},
+        fixed,
+        zerofill,
+        precision=0,
+        column type={l}%lo alinea a la iz
+    },
+    display columns/1/.style={
+        column name={GAMA\_IAU\_ID},
+        string type,
+        column type={l}%lo alinea a la iz
+    },
+    display columns/2/.style={
+        column name={Z\_HELIO},
+        fixed,
+        zerofill,
+        precision=6,
+    },
+    display columns/3/.style={
+        column name={z (NED)},
+        fixed,
+        zerofill,
+        precision=6,
+    },
+    display columns/4/.style={
+        column name={${\sigma}_{z}$ (NED)},
+        fixed,
+        zerofill,
+        precision=6,
+    },
+    display columns/5/.style={
+        column name={Z\_SOURCE},
+        fixed,
+        zerofill,
+        precision=0,
+    },
+    display columns/6/.style={
+        column name={Z\_QUALITY},
+        fixed,
+        zerofill,
+        precision=0,
+    },
+    font=\footnotesize,
+    every head row/.style={before row=\toprule,after row=\midrule},
+    every last row/.style={after row=\bottomrule}
+]{Apendices/b_tbSIGMAGAMA/gama_redshift_tabla.csv}
+\caption{Muestra que contiene 27 observaciones procedentes del catálogo \gama\ DR1 cuyo \rt\ se encuentra también disponible en la base de datos NED.}
+\label{tab:ajuste_error_gama}
+\end{table}

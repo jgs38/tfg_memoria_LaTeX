@@ -1,0 +1,84 @@
+%    NUEVOS COMANDOS DEFINIDOS MEDIANTE NEWCOMAND
+\DeclareMathOperator\erf{erf}
+
+% ENTORNO MATEMÁTICO
+\newcommand{\maths}[1]{$ #1 $}
+
+% TEXTO RESALTADO
+\newcommand{\resalta}[1]{\textit{#1}}
+\newcommand{\anglicismo}[1]{\textit{#1}}
+\newcommand{\cultismo}[1]{\textit{#1}}
+\newcommand{\comillas}[1]{``#1''}
+
+% SÍMBOLOS MATEMÁTICOS
+\newcommand{\menoroigual}{$\geqslant$}
+\newcommand{\delorden}{$\sim$}
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+\newcommand{\porcentaje}[1]{$#1\:\%$}
+
+%\lesssim  	less or quivalent
+% \gtrsim 
+
+% UNIDADES
+%   PROPIAS DE ASTRONOMÍA
+\newcommand{\solares}[2]{$#2 \:{#1}_{\odot}$}
+\newcommand{\masassolares}[1]{$#1 \:{M}_{\odot}$}
+\newcommand{\luminosidadessolares}[1]{$#1 \:{L}_{\odot}$}
+\newcommand{\tfe}[1]{$#1 \:{M}_{\odot}\,\mathrm{{yr}^{-1}}$}
+% \newcommand{\myr}{}
+\newcommand{\flujo}[1]{${S}_{#1 \:\mu\mathrm{m}}$}
+%   GENERALES
+\newcommand{\microm}[1]{$#1 \:\mu\mathrm{m}$}
+\newcommand{\angstrom}[1]{$#1 \:$\AA}
+\newcommand{\mjy}[1]{$#1 \:\mathrm{mJy}$}
+\newcommand{\jy}[1]{$#1 \:\mathrm{Jy}$}
+\newcommand{\kelvin}[1]{$#1 \:\mathrm{K}$}
+%   Grados celsius
+\newcommand{\celsius}{\hspace{-2,5mm}$\phantom{a}^{\circ} \mathrm{C}$~}
+\newcommand{\grad}{$^{\circ}$}
+
+% NOMBRES USADOS FRECUENTEMENTE
+\newcommand{\hatlas}{\mbox{\textit{H}-ATLAS}}
+\newcommand{\halos}{\mbox{HALOS}}
+\newcommand{\halo}{\mbox{HALO}}
+\newcommand{\gama}{\mbox{GAMA}}
+\newcommand{\spire}{\mbox{SPIRE}}
+\newcommand{\pacs}{\mbox{PACS}}
+\newcommand{\hifi}{\mbox{HIFI}}
+\newcommand{\h}{\textit{\mbox{Herschel}}}
+\newcommand{\rt}{\textit{\mbox{redshift}}}
+\newcommand{\rts}{\textit{\mbox{redshifts}}}
+\newcommand{\sed}{\mbox{SED}}
+\newcommand{\sfr}{\mbox{SFR}}
+\newcommand{\slg}{\mbox{SLG}}
+\newcommand{\etg}{\mbox{ETG}}
+\newcommand{\cross}{\mbox{cross-identificación}}
+\newcommand{\smm}{\mbox{SMM~J2135-0102}}
+\newcommand{\arp}{\mbox{Arp220}}
+\newcommand{\gquince}{\mbox{G15.141}}
+
+\newcommand{\typewriter}[1]{\texttt{#1}}
+\newcommand{\python}{\texttt{\mbox{Python}}}
+
+% PARÁMETROS
+\newcommand{\z}{\textit{z}}
+\newcommand{\paramk}{'K'}
+\newcommand{\paramc}{'C'}
+
+%   Compuestos químicos
+\newcommand{\agua}{H_{2}O}
+
+%   Nuevos comandos para tablas
+%http://tex.stackexchange.com/questions/12703/how-to-create-fixed-width-table-columns-with-text-raggedright-centered-raggedlef
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%   Modificación de la linea para el pie de página
+%https://es.wikibooks.org/wiki/Manual_de_LaTeX/Gestionando_la_bibliograf%C3%ADa/Notas_al_pie
+\renewcommand{\footnoterule}{\vspace*{-3pt}
+  \noindent\rule{5cm}{1pt}\vspace*{2.6pt}}
+  
+  
+  
+  

@@ -1,0 +1,279 @@
+\section{Redshifts fotométricos de los candidatos }\label{apendice:tab:articulo}
+
+\begin{table}[!ht]
+\centering
+\pgfplotstabletypeset[
+    col sep=comma,
+    columns={HATLASDR1,RA,DEC,S500,eS500,S350,eS350,S250,eS250,ZA,ErrorZA,ZB,ErrorZB},
+    brackets/.style={
+        postproc cell content/.append style={/pgfplots/table/@cell content/.add={\relax[}{]}},
+    },
+    parenthesis/.style={
+        postproc cell content/.append style={/pgfplots/table/@cell content/.add={\relax(}{)}},
+    },
+    display columns/0/.style={
+        string type,
+        column name={$\qquad$H-ATLAS},
+        column type={l}
+    },
+    display columns/1/.style={
+        column name={RA},
+        fixed,
+        zerofill,
+        precision=3,
+    },
+    columns/2/.style={
+        column name={DEC},
+        fixed,
+        zerofill,
+        precision=4,
+    },
+    display columns/3/.style={
+        column name={$S_{500}\,$},
+        fixed,
+        zerofill,
+        precision=0,
+        column type/.add={}{@{\hspace{0mm}}}
+    },
+    display columns/4/.style={
+        column name={\scriptsize{(mJy)}},
+        fixed,
+        zerofill,
+        precision=0,
+        parenthesis
+    },
+    display columns/5/.style={
+        column name={$S_{350}\,$},
+        fixed,
+        zerofill,
+        precision=0,
+        column type/.add={}{@{\hspace{0mm}}}
+    },
+    display columns/6/.style={
+        column name={\scriptsize{(mJy)}},
+        fixed,
+        zerofill,
+        precision=0,
+        parenthesis
+    },
+    display columns/7/.style={
+        column name={$S_{250}\,$},
+        fixed,
+        zerofill,
+        precision=0,
+        column type/.add={}{@{\hspace{0mm}}}
+    },
+    display columns/8/.style={
+        column name={\scriptsize{(mJy)}},
+        fixed,
+        zerofill,
+        precision=0,
+        parenthesis
+    },
+    display columns/9/.style={
+        column name={$\;\;{z}_{\mathrm{H}}$},
+        fixed,
+        zerofill,
+        precision=2,
+        column type/.add={}{@{\hspace{1mm}}}
+    },
+    display columns/10/.style={
+        column name={${\sigma}_{\mathrm{H}}$},
+        fixed,
+        zerofill,
+        precision=2,
+        parenthesis
+    },
+    display columns/11/.style={
+        column name={$\;\;{z}_{\mathrm{phot}}$ },
+        fixed,
+        zerofill,
+        precision=2,
+        column type/.add={}{@{\hspace{1mm}}}
+    },
+    display columns/12/.style={
+        column name={${\sigma}_{\mathrm{phot}}$},
+        fixed,
+        zerofill,
+        precision=2,
+        parenthesis
+    },
+    font=\footnotesize,
+    every head row/.style={before row=\toprule,after row=\midrule},
+    every last row/.style={after row=\bottomrule}
+]{Apendices/a_tb64/comparacion_z.csv}
+\end{table}
+
+
+% \newgeometry{top=15mm, bottom=2.5mm}
+
+\begin{table}[!ht]
+\centering
+\pgfplotstabletypeset[
+    col sep=comma,
+    columns={HATLASDR1,RA,DEC,S500,eS500,S350,eS350,S250,eS250,ZA,ErrorZA,ZB,ErrorZB},
+    brackets/.style={
+        postproc cell content/.append style={/pgfplots/table/@cell content/.add={\relax[}{]}},
+    },
+    parenthesis/.style={
+        postproc cell content/.append style={/pgfplots/table/@cell content/.add={\relax(}{)}},
+    },
+    display columns/0/.style={
+        string type,
+        column name={$\qquad$H-ATLAS},
+        column type={l}%lo alinea a la iz
+    },
+    display columns/1/.style={
+        column name={RA},
+        fixed,
+        zerofill,
+        precision=3,
+        fonts by sign={}{\color{red}},
+    },
+    columns/2/.style={
+        column name={DEC},
+        fixed,
+        zerofill,
+        precision=4,
+    },
+    display columns/3/.style={
+        column name={$S_{500}\,$},
+        fixed,
+        zerofill,
+        precision=0,
+        column type/.add={}{@{\hspace{0mm}}}
+    },
+    display columns/4/.style={
+        column name={\scriptsize{(mJy)}},
+        fixed,
+        zerofill,
+        precision=0,
+        parenthesis
+    },
+    display columns/5/.style={
+        column name={$S_{350}\,$},
+        fixed,
+        zerofill,
+        precision=0,
+        column type/.add={}{@{\hspace{0mm}}}
+    },
+    display columns/6/.style={
+        column name={\scriptsize{(mJy)}},
+        fixed,
+        zerofill,
+        precision=0,
+        parenthesis
+    },
+    display columns/7/.style={
+        column name={$S_{250}\,$},
+        fixed,
+        zerofill,
+        precision=0,
+        column type/.add={}{@{\hspace{0mm}}}
+    },
+    display columns/8/.style={
+        column name={\scriptsize{(mJy)}},
+        fixed,
+        zerofill,
+        precision=0,
+        parenthesis
+    },
+    display columns/9/.style={
+        column name={$\;\,{z}_{\mathrm{H}}$},
+        fixed,
+        zerofill,
+        precision=2,
+        column type/.add={}{@{\hspace{1mm}}}
+    },
+    display columns/10/.style={
+        column name={${\sigma}_{\mathrm{H}}$},
+        fixed,
+        zerofill,
+        precision=2,
+        parenthesis
+    },
+    display columns/11/.style={
+        column name={$\;\;{z}_{\mathrm{phot}}$ },
+        fixed,
+        zerofill,
+        precision=2,
+        column type/.add={}{@{\hspace{1mm}}}
+    },
+    display columns/12/.style={
+        column name={${\sigma}_{\mathrm{phot}}$},
+        fixed,
+        zerofill,
+        precision=2,
+        parenthesis
+    },
+    font=\footnotesize,
+    every head row/.style={before row=\toprule,after row=\midrule},
+    every last row/.style={after row=\bottomrule}
+]{Apendices/a_tb64/comparacion_z2.csv}
+\caption{Muestra de 64 candidatos a SLGs procedente del articulo \cite{article:Nuevo_2012}. Los errores se encuentran entre paréntesis a la derecha de cada medida. La columna \maths{z_{\mathrm{H}}} contiene los valores del \rt\ que estos autores proponen para estos objetos mientras que la columna \maths{z} contiene los valores obtenidos a partir de nuestro código.}
+\label{tab:redshift_halos}
+\end{table}
+
+
+\section{Selección de objetos del catálogo GAMA }\label{apendice:tab:sigmas}
+
+\begin{table}[!ht]
+\centering
+\pgfplotstabletypeset[
+    col sep=comma,
+    columns={n,id,zg,zn,szn,source,quality},
+    brackets/.style={
+        postproc cell content/.append style={/pgfplots/table/@cell content/.add={\relax[}{]}},
+    },
+    parenthesis/.style={
+        postproc cell content/.append style={/pgfplots/table/@cell content/.add={\relax(}{)}},
+    },
+    display columns/0/.style={
+        column name={N},
+        fixed,
+        zerofill,
+        precision=0,
+        column type={l}%lo alinea a la iz
+    },
+    display columns/1/.style={
+        column name={GAMA\_IAU\_ID},
+        string type,
+        column type={l}%lo alinea a la iz
+    },
+    display columns/2/.style={
+        column name={Z\_HELIO},
+        fixed,
+        zerofill,
+        precision=6,
+    },
+    display columns/3/.style={
+        column name={z (NED)},
+        fixed,
+        zerofill,
+        precision=6,
+    },
+    display columns/4/.style={
+        column name={${\sigma}^{z}$ (NED)},
+        fixed,
+        zerofill,
+        precision=6,
+    },
+    display columns/5/.style={
+        column name={Z\_SOURCE},
+        fixed,
+        zerofill,
+        precision=0,
+    },
+    display columns/6/.style={
+        column name={Z\_QUALITY},
+        fixed,
+        zerofill,
+        precision=0,
+    },
+    font=\footnotesize,
+    every head row/.style={before row=\toprule,after row=\midrule},
+    every last row/.style={after row=\bottomrule}
+]{Apendices/b_tbSIGMAGAMA/gama_redshift_tabla.csv}
+\caption{Muestra que contiene 27 observaciones procedentes del catálogo \gama\ DR1 cuyo \rt\ se encuentra también disponible en la base de datos NED.}
+\label{tab:ajuste_error_gama}
+\end{table}
